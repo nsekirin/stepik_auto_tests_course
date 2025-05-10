@@ -6,6 +6,10 @@ class MainPageLocators:
 
 
 class LoginPageLocators:
+    REGISTRATION_BUTTON = (By.CSS_SELECTOR, '[value="Register"]')
+    REGISTRATION_CONFIRM_PASSWORD = (By.CSS_SELECTOR, "#id_registration-password2")
+    REGISTRATION_PASSWORD = (By.CSS_SELECTOR, "#id_registration-password1")
+    REGISTRATION_EMAIL = (By.CSS_SELECTOR, "#id_registration-email")
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
 
@@ -19,6 +23,7 @@ class ProductPageLocators:
 
 
 class BasePageLocators:
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
     BASKET_LINK = (By.XPATH, '//a[@class="btn btn-default"]')
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
